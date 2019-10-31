@@ -2,11 +2,14 @@
 
 ##  Systematic Elucidation and Assessment of Regulatory Cell-to-cell Interaction Networks (SEARCHIN)
 
-
-
 ## Description
 
 This is the tutorial that guides you thorugh the application of the SEARCHIN methdology for the identification of cell-to-cell ligand-receptor interactions responsible of non-cell-autonomous communication mechanisms. 
+
+
+
+![Searching Schematics](/images/searchin-schematics.jpg)
+Format: ![Alt Text](url)
 
 ## Introduction
 
