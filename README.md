@@ -85,3 +85,14 @@ An object of class SEARCHIN
 ------------------------------
 ```
 
+### Troubleshooting
+
+#### Required Libraries
+
+```R
+require(tidyverse) 
+require(org.Hs.eg.db)
+require(org.Mm.eg.db)
+require(RNeo4j)
+```
+
