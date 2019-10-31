@@ -6,7 +6,7 @@ require(RNeo4j)
 
 ## Loading Functions ----
 message(">>> Loading PrePPI Libraries")
-source("/Users/av2729/Workspace/SEARCHIN/libs/preppi-libs.R")
+source("libs/preppi-libs.R")
 
 ## Setting Neo4j Credential ----
 neo4j_username <- "neo4j"
@@ -16,9 +16,8 @@ neo4j_password <- "preppi"
 neo4j_server_url <- "http://localhost:7474/db/data/"
 
 ## Filename Declaration ----
-preppi_final600_filename <- "/Users/av2729/Workspace/SEARCHIN/data/preppi_final600.txt"
-ppi_cache_filename <- "/Users/av2729/Workspace/SEARCHIN/tmp/searchin_ppi_cache_table_Jul9_2019.csv"
-# uniprot_entrezgeneid_symbol_mapping_filename <- "/Users/av2729/Workspace/SEARCHIN/data/uniprot_entrezgeneid_symbol_mapping.csv"
+preppi_final600_filename <- "data/preppi_final600.txt"
+ppi_cache_filename <- "tmp/searchin_ppi_cache_table_Jul9_2019.csv"
 
 ## Attaching Neo4j web handle ----
 message(">>> Attaching Neo4j web handle @ " , neo4j_server_url , " as user: ", neo4j_username )

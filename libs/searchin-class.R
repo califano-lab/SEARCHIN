@@ -9,11 +9,11 @@ rm(list = ls())
   require(tidyverse)
   
 
-  source("/Users/av2729/Workspace/SEARCHIN/libs/searchin-utility-class.R")
+  source("libs/searchin-utility-class.R")
   
-  source("/Users/av2729/Workspace/SEARCHIN/libs/preppiTable-class.R")
-  source("/Users/av2729/Workspace/SEARCHIN/libs/viperTable-class.R")
-  source("/Users/av2729/Workspace/SEARCHIN/libs/cindyTable-class.R")
+  source("libs/preppiTable-class.R")
+  source("libs/viperTable-class.R")
+  source("libs/cindyTable-class.R")
 
   # setOldClass(c('CindyTable', 'PreppiTable', 'ViperTable'))  
 

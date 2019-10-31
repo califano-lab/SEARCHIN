@@ -2,7 +2,7 @@
 # PreppiTable class definition
 # ----------------------------
 
-	source("/Users/av2729/Workspace/SEARCHIN/libs/ppi-null-model-generator.R")
+	source("libs/ppi-null-model-generator.R")
 
   require(methods)
   require(sloop)

@@ -21,6 +21,7 @@ We used Neo4J Graph Database Community Edition version 3.2.5 to build a network 
  The first step consists in setting a seed for the random number generator that allows us to reproduce the code in the same way 
 
 ```R
+rm(list = ls())
 set.seed(666)
 source("libs/searchin-class.R")	# Load SEARCHING libraries and utilities
 ```

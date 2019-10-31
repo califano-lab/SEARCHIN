@@ -25,9 +25,6 @@
       .Object@uniprot_mapping <- read_csv("data/uniprot-entrezgeneid-symbol-mapping-human-mouse-rat.csv" , col_types = c("ccccccc"))
       .Object@ortho_mouse2human <- read_csv( "data/mouse2human.csv" , col_types = c("ccc"))
       .Object@ortho_human2mouse <- read_csv( "data/human2mouse.csv" , col_types = c("ccc"))
-      # .Object@entrez2sym <- read_csv("/Users/av2729/Workspace/vaxtools/data/mapping-human-mouse-entrez-id-gene-symbols-gene-biotype.csv" , col_types = c("cccc"))
-      # .Object@ortho_rat2mouse <- read_csv( "/Users/av2729/Workspace/SEARCHIN/utils/rat2mouse.csv" , col_types = c("ccc"))
-      # .Object@ortho_rat2mouse_entrez <- read_csv( "/Users/av2729/Workspace/SEARCHIN/utils/rat2mouse-entrez.csv" , col_types = c("ccc"))
       .Object
     }
   )  

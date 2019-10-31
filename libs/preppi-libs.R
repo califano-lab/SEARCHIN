@@ -1,7 +1,7 @@
 ##
 # Functions for Ligand/Receptor interaction estimation
 # ----------------------------------------------------
-# source("/Users/av2729/Workspace/SEARCHIN/libs/preppi-libs.R")
+# source("libs/preppi-libs.R")
 
 # require(RNeo4j)
 require(qvalue)
