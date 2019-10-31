@@ -4,10 +4,6 @@
 
 
 
-
-
-
-
 ## Introduction
 
 
@@ -22,23 +18,39 @@ We used Neo4J Graph Database Community Edition version 3.2.5 to build a network 
 
 #### Pipeline Commands
 
+ The first step consists in setting a seed for the random number generator that allows us to reproduce the code in the same way 
+
 ```R
-  my_sin <- SEARCHIN()
-  
-  x <- read_csv(filename)
-  my_sin <- addLigandslist(my_sin,x$GeneSymbol)
-  x <- read_csv("/Users/av2729/Workspace/SEARCHIN/data/input/cindy_table.csv", col_types = "ccd")
-  my_sin <- addModulatorTable(my_sin,x)
-  x <- read_delim("/Users/av2729/Workspace/SEARCHIN/data/input/marina-analysis-on-membrane-receptors-for-paper.txt", delim = "\t" , col_types = "ccdddd")
-  my_sin <- addReceptorTable(my_sin,x)
-  
-  my_sin <- runModel(my_sin)
-  my_sin <- generateRank(my_sin)
+set.seed(666)
+source("libs/searchin-class.R")	# Load SEARCHING libraries and utilities
 ```
 
+The second step is to load the input files 
 
+```R
+	## Reading TXT file with the list of the ligands ----
+  	tmp <- read_csv("input/putative_ligands_mouse_new_data_jul2019.txt",col_types = c("cccccccc"))
+		ligands_list <- tmp$GeneSymbol
+	## Reading CSV file with a table with the modualtors analysis ----
+  	modulators_table <- read_csv("input/cindy-analysis.csv", col_types = "ccd")
+	## Reading CSV file with a table with the VIPER analysis ----
+  	receptors_table <- read_delim("input/viper-analysis.csv", delim = "\t" , col_types = "ccdddd")
+```
 
-#### Output Example
+The third and last step is to run the pipeline as one command-only line of code that performs all the steps in cascade. However, each step can be performed as separate and individual line of code.
+
+```R
+  my_sin <- SEARCHIN() %>% 
+  	addLigandslist(ligands_list) %>% 
+  	addModulatorTable(modulators_table) %>% 
+  	addReceptorTable(receptors_table) %>% 
+  	runModel() %>%
+  	generateRank()
+```
+
+By printing the SEARCHIN object, you can see the table content with the ranked ligand-receptor interaction inferred by the algorithm.
+
+##### Output Example
 
 ```shell
 > my_sin
