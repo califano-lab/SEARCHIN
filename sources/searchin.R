@@ -17,10 +17,9 @@
 	## Reading CSV file with a table with the VIPER analysis ----
   receptors_table <- read_delim("/Users/av2729/Workspace/SEARCHIN/input/viper-analysis.csv", delim = "\t" , col_types = "ccdddd")
   
-	## Creating a SEARCHING object ----
-  my_sin <- SEARCHIN()
+	## Creating a SEARCHING object AND Running the analysis as pipeline ----
 	
-  my_sin <- my_sin %>% 
+  my_sin <- SEARCHIN() %>% 
   	addLigandslist(ligands_list) %>% 
   	addModulatorTable(modulators_table) %>% 
   	addReceptorTable(receptors_table) %>% 
