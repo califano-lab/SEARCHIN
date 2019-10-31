@@ -4,21 +4,23 @@
 
 
 
+## Description
+
+This is the tutorial that guides you thorugh the application of the SEARCHIN methdology for the identification of cell-to-cell ligand-receptor interactions responsible of non-cell-autonomous communication mechanisms. 
+
 ## Introduction
 
-
+Cell-to-cell etc., XXX
 
 #### Protein-Protein Interaction (PPI) empirical null model using PrePPI
 
 We used Neo4J Graph Database Community Edition version 3.2.5 to build a network of human protein interaction consisting of 20,259 proteins and 203,952,081 interactions with a total store size of 14.28 GB.
 
-
-
 ### Using SEARCHIN - Example
 
 #### Pipeline Commands
 
- The first step consists in setting a seed for the random number generator that allows us to reproduce the code in the same way 
+ The **first step** consists in setting a seed for the random number generator that allows us to reproduce the code in the same way 
 
 ```R
 rm(list = ls())
@@ -26,9 +28,11 @@ set.seed(666)
 source("libs/searchin-class.R")	# Load SEARCHING libraries and utilities
 ```
 
-The second step is to load the input files 
+The **second step** is loading the input files. Here, is the code to load the data from our manuscript that can reproduce the findings. 
 
 ```R
+.isNeo4jServerOffline <- TRUE	# Flag this as FALSE if you have installed the Neo4j server or if you want to run SEARCHIN with your own data: you need the server with the PPI data running
+
 ## Reading TXT file with the list of the ligands ----
 tmp <- read_csv("input/putative_ligands_mouse_new_data_jul2019.txt",col_types = c("cccccccc"))
 ligands_list <- tmp$GeneSymbol
@@ -38,7 +42,7 @@ modulators_table <- read_csv("input/cindy-analysis.csv", col_types = "ccd")
 receptors_table <- read_delim("input/viper-analysis.csv", delim = "\t" , col_types = "ccdddd")
 ```
 
-The third and last step is to run the pipeline as one command-only line of code that performs all the steps in cascade. However, each step can be performed as separate and individual line of code.
+The **third and last step** is to run the pipeline as one command-only line of code that performs all the steps in cascade. However, each step can be performed as separate and individual line of code.
 
 ```R
 my_sin <- SEARCHIN() %>% 
