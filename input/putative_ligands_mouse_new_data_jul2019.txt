@@ -1,0 +1,70 @@
+rat_uniprot_id,rat_entrez_id,rat_sym,mouse_entrez_id,mouse_sym,Name,fold_change,GeneSymbol
+P31232,25123,Tagln,21345,Tagln,Transgelin,plus 1.9,Tagln
+Q566C7,294292,Nudt3,56409,Nudt3,Diphosphoinositol polyphosphate phosphohydrolase 1,plus 2.3,Nudt3
+P14841,25307,Cst3,13010,Cst3,Cystatin-C,plus 2.3,Cst3
+P45592,29271,Cfl1,12631,Cfl1,Cofilin-1,plus 2.5,Cfl1
+P10960,25524,Psap,19156,Psap,Sulfated glycoprotein 1,plus 21,Psap
+P24594,25285,Igfbp5,16011,Igfbp5,Insulin-like growth factor-binding protein 5,plus 3,Igfbp5
+P08699,83781,Lgals3,16854,Lgals3,Galectin-3,plus 3,Lgals3
+P08494,25333,Mgp,17313,Mgp,Matrix Gla protein,plus 5,Mgp
+P12843,25662,Igfbp2,16008,Igfbp2,Insulin-like growth factor-binding protein 2,plus 6,Igfbp2
+Q9Z1Y3,83501,Cdh2,12558,Cdh2,Cadherin-2,plus 8.6,Cdh2
+P05964,85247,S100a6,20200,S100a6,Protein S100-A6,Tg only,S100a6
+P14095,81503,Cxcl1,14825,Cxcl1,Growth-regulated alpha protein,Tg only,Cxcl1
+P50229,25542,Ccl3,20302,Ccl3,C-C motif chemokine 3,Tg only,Ccl3
+P30904,103694877,NA,NA,NA,Macrophage migration inhibitory factor,Tg only,Mif
+P30904,81683,NA,NA,NA,Macrophage migration inhibitory factor,Tg only,Mif
+P62775,79215,Mtpn,14489,Mtpn,Myotrophin,Tg only,Mtpn
+P80254,29318,Ddt,13202,Ddt,D-dopachrome decarboxylase,Tg only,Ddt
+P07151,24223,B2m,12010,B2m,Beta-2-microglobulin,Tg only,B2m
+P97885,60665,Cxcl6,20311,Cxcl5,C-X-C motif chemokine 5,Tg only,Cxcl5
+P11762,56646,Lgals1,16852,Lgals1,Galectin-1,Tg only,Lgals1
+Q5U318,364052,Pea15,18611,Pea15a,Astrocytic phosphoprotein PEA-15,Tg only,Pea15a
+P07632,24786,Sod1,20655,Sod1,Superoxide dismutase [Cu-Zn],Tg only,Sod1
+P02696,25056,Rbp1,19659,Rbp1,Retinol-binding protein I,Tg only,Rbp1
+Q05982,191575,Nme1,18102,Nme1,Nucleoside diphosphate kinase A,Tg only,Nme1
+P19804,83782,Nme2,18103,Nme2,Nucleoside diphosphate kinase B,Tg only,Nme2
+O55004,56759,Rnase4,58809,Rnase4,Ribonuclease 4 precursor,Tg only,Rnase4
+P08025,24482,Igf1,16000,Igf1,Insulin-like growth factor I,Tg only,Igf1
+Q9EQX9,116725,NA,NA,NA,Ubiquitin-conjugating enzyme E2 N,Tg only,Ube2n
+P10111,100360977,NA,NA,NA,Peptidyl-prolyl cis-trans isomerase A,Tg only,Ppia
+P10111,25518,NA,NA,NA,Peptidyl-prolyl cis-trans isomerase A,Tg only,Ppia
+P41498,24161,NA,NA,NA,Low molecular weight phosphotyrosine protein phosphatase,Tg only,Acp1
+Q498E0,298370,Txndc12,66073,Txndc12,Thioredoxin domain-containing protein 12,Tg only,Txndc12
+P62634,64530,Cnbp,12785,Cnbp,Cellular nucleic acid-binding protein,Tg only,Cnbp
+P18666,50685,Myl12b,NA,Gm49909,Myosin regulatory light chain 12B,Tg only,Myl12b
+P18666,50685,Myl12b,67938,Myl12b,Myosin regulatory light chain 12B,Tg only,Myl12b
+O88767,117287,Park7,57320,Park7,Protein DJ-1,Tg only,Park7
+P0C5H9,315989,Manf,74840,Manf,Mesencephalic astrocyte-derived neurotrophic factor,Tg only,Manf
+Q9R063,113898,Prdx5,54683,Prdx5,"Peroxiredoxin-5, mitochondrial",Tg only,Prdx5
+Q5FVH0,315598,C1qtnf5,235312,C1qtnf5,Complement C1q tumor necrosis factor-related protein 5,Tg only,C1qtnf5
+Q00981,29545,Uchl1,22223,Uchl1,Ubiquitin carboxyl-terminal hydrolase isozyme L1,Tg only,Uchl1
+O35244,94167,Prdx6,320769,Prdx6b,Peroxiredoxin-6,Tg only,Prdx6
+O35244,94167,Prdx6,11758,Prdx6,Peroxiredoxin-6,Tg only,Prdx6
+Q3T1J9,297387,Mob1a,232157,Mob1a,MOB kinase activator 1A,Tg only,Mob1a
+P07895,24787,Sod2,20656,Sod2,"Superoxide dismutase [Mn], mitochondrial",Tg only,Sod2
+Q4KM74,310710,Sec22b,20333,Sec22b,Vesicle-trafficking protein SEC22b,Tg only,Sec22b
+Q64361,59073,Lxn,17035,Lxn,Latexin,Tg only,Lxn
+P14942,300850,Gsta4,14860,Gsta4,Glutathione S-transferase alpha-4,Tg only,Gsta4
+P08010,24424,Gstm7,68312,Gstm7,Glutathione S-transferase Mu 2,Tg only,Gstm2
+P08010,24424,Gstm2,68312,Gstm7,Glutathione S-transferase Mu 2,Tg only,Gstm2
+Q5U1X1,300689,Rexo2,104444,Rexo2,"Oligoribonuclease, mitochondrial",Tg only,Rexo2
+Q08420,25352,Sod3,20657,Sod3,Extracellular superoxide dismutase [Cu-Zn],Tg only,Sod3
+Q66HR2,114764,Mapre1,13589,Mapre1,Microtubule-associated protein RP/EB family member 1,Tg only,Mapre1
+Q6AYE5,315594,Oaf,102644,Oaf,Out at first protein homolog,Tg only,Oaf
+P06762,24451,Hmox1,15368,Hmox1,Heme oxygenase 1,Tg only,Hmox1
+P58775,500450,Tpm2,22004,Tpm2,Tropomyosin beta chain,Tg only,Tpm2
+Q63768,54245,Crk,12928,Crk,Proto-oncogene C-crk,Tg only,Crk
+P30919,290923,Aga,11593,Aga,N(4)-(Beta-N-acetylglucosaminyl)-L-asparaginase precursor,Tg only,Aga
+Q9R1E9,64032,Ccn2,14219,Ccn2,Connective tissue growth factor,Tg only,Ctgf
+P06866,24464,Hp,15439,Hp,Haptoglobin,Tg only,Hp
+Q794E4,64200,Hnrnpf,98758,Hnrnpf,Heterogeneous nuclear ribonucleoprotein F,Tg only,Hnrnpf
+P47819,24387,Gfap,14580,Gfap,Glial fibrillary acidic protein,Tg only,Gfap
+P61980,117282,Hnrnpk,15387,Hnrnpk,Heterogeneous nuclear ribonucleoprotein K,Tg only,Hnrnpk
+P11598,29468,Pdia3,14827,Pdia3,Protein disulfide-isomerase A3,Tg only,Pdia3
+Q66H80,300674,Arcn1,213827,Arcn1,Coatomer subunit delta,Tg only,Arcn1
+P08592,54226,App,11820,App,Amyloid beta A4 protein,Tg only,App
+Q6P7A9,367562,Gaa,14387,Gaa,Lysosomal alpha-glucosidase,Tg only,Gaa
+O35806,59106,Ltbp2,16997,Ltbp2,Latent-transforming growth factor beta-binding protein 2,Tg only,Ltbp2
+Q00918,59107,Ltbp1,268977,Ltbp1,Latent-transforming growth factor beta-binding protein 1,Tg only,Ltbp1
+P55051,80841,Fabp7,12140,Fabp7,"Fatty acid-binding protein, brain",Tg only,Fabp7
