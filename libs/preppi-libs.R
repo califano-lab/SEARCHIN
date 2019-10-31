@@ -47,6 +47,13 @@ setClass("PrePPIClass",
         
       } else { # ppi is not present in cache we need to perform the query to GraphDB, build the null model and generate the pvalue
         
+        if (!.isNeo4jServerOffline)
+        {
+          ## Attaching Neo4j web handle ----
+          message(">>> Attaching Neo4j web handle @ " , neo4j_server_url , " as user: ", neo4j_username )
+          graph = startGraph( neo4j_server_url , username = neo4j_username , password = neo4j_password )          
+        }
+
         # query.p1 <- paste0( "MATCH (p1:PreppiProtein)-[r:INTERACTS_WITH]->(p2:PreppiProtein) WHERE p1.name={p1} RETURN p1.name,r.final_score,p2.name" )
         # result.p1 <- cypher(graph, query.p1 , p1=p1)
         # query.p2 <- paste0( "MATCH (p1:PreppiProtein)-[r:INTERACTS_WITH]->(p2:PreppiProtein) WHERE p2.name={p2} RETURN p1.name,r.final_score,p2.name" )

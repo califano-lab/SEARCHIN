@@ -19,9 +19,12 @@ neo4j_server_url <- "http://localhost:7474/db/data/"
 preppi_final600_filename <- "data/preppi_final600.txt"
 ppi_cache_filename <- "tmp/searchin_ppi_cache_table_Jul9_2019.csv"
 
-## Attaching Neo4j web handle ----
-message(">>> Attaching Neo4j web handle @ " , neo4j_server_url , " as user: ", neo4j_username )
-graph = startGraph( neo4j_server_url , username = neo4j_username , password = neo4j_password )
+if (!.isNeo4jServerOffline)
+{
+	## Attaching Neo4j web handle ----
+	message(">>> Attaching Neo4j web handle @ " , neo4j_server_url , " as user: ", neo4j_username )
+	graph = startGraph( neo4j_server_url , username = neo4j_username , password = neo4j_password )          
+}
 
 ## Loading datasets and caches ----
 message(">>> Reading the PrePPI DB with good scores - LH > 0.5 ")
@@ -35,17 +38,6 @@ runPreppiModel <- function( ligand_uniprot_id , receptor_uniprot_id )
 {
 	
 	preppi_filtered <- preppi_dt[ prot1 %in% unique(ligand_uniprot_id) & prot2 %in% unique(receptor_uniprot_id) , ]
-	# # print( dim(preppi_filtered) )
-	# cat(">>> Building models for " , nrow(preppi_filtered) , " PPI ...\n" )
-	# 
-	# message(">>> Reading PPI Cache Data")
-	# {
-	# 	preppi_filtered <- preppi_filtered[ !(prot1 %in% preppi_obj@cache_table$p1 & prot2 %in% preppi_obj@cache_table$p2) ]
-	# 	cat(">>> >>> Missing from cache " , nrow(preppi_filtered) , " PPI ...\n" )
-	# 	
-	# 	if ( nrow(preppi_filtered) == 0 )
-	# 		return(preppi_obj)
-	# }
 
 	system.time({
 		message("- Generating PValue / Null Model for " ,  nrow(preppi_filtered) , " PPIs ...")

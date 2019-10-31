@@ -5,7 +5,8 @@
 	isWorkspaceToClean <- TRUE
 	if (isWorkspaceToClean)
 		rm(list = ls())
-	
+
+	.isNeo4jServerOffline <- TRUE	
 	set.seed(666)
 	source("libs/searchin-class.R")	# Load SEARCHING libraries and utilities
 
