@@ -10,7 +10,7 @@
 
 #### Protein-Protein Interaction (PPI) empirical null model using PrePPI
 
-We used Neo4J Graph Database Community Edition version 3.2.5 to build a network of human protein interaction consisting of 20259 proteins and 203,952, 081 interactions with a total store size of 14.28 GB.
+We used Neo4J Graph Database Community Edition version 3.2.5 to build a network of human protein interaction consisting of 20,259 proteins and 203,952,081 interactions with a total store size of 14.28 GB.
 
 
 
@@ -28,24 +28,24 @@ source("libs/searchin-class.R")	# Load SEARCHING libraries and utilities
 The second step is to load the input files 
 
 ```R
-	## Reading TXT file with the list of the ligands ----
-  	tmp <- read_csv("input/putative_ligands_mouse_new_data_jul2019.txt",col_types = c("cccccccc"))
-		ligands_list <- tmp$GeneSymbol
-	## Reading CSV file with a table with the modualtors analysis ----
-  	modulators_table <- read_csv("input/cindy-analysis.csv", col_types = "ccd")
-	## Reading CSV file with a table with the VIPER analysis ----
-  	receptors_table <- read_delim("input/viper-analysis.csv", delim = "\t" , col_types = "ccdddd")
+## Reading TXT file with the list of the ligands ----
+tmp <- read_csv("input/putative_ligands_mouse_new_data_jul2019.txt",col_types = c("cccccccc"))
+ligands_list <- tmp$GeneSymbol
+## Reading CSV file with a table with the modualtors analysis ----
+modulators_table <- read_csv("input/cindy-analysis.csv", col_types = "ccd")
+## Reading CSV file with a table with the VIPER analysis ----
+receptors_table <- read_delim("input/viper-analysis.csv", delim = "\t" , col_types = "ccdddd")
 ```
 
 The third and last step is to run the pipeline as one command-only line of code that performs all the steps in cascade. However, each step can be performed as separate and individual line of code.
 
 ```R
-  my_sin <- SEARCHIN() %>% 
-  	addLigandslist(ligands_list) %>% 
-  	addModulatorTable(modulators_table) %>% 
-  	addReceptorTable(receptors_table) %>% 
-  	runModel() %>%
-  	generateRank()
+my_sin <- SEARCHIN() %>% 
+  addLigandslist(ligands_list) %>% 
+  addModulatorTable(modulators_table) %>% 
+  addReceptorTable(receptors_table) %>% 
+  runModel() %>%
+  generateRank()
 ```
 
 By printing the SEARCHIN object, you can see the table content with the ranked ligand-receptor interaction inferred by the algorithm.
