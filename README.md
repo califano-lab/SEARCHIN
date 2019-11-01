@@ -19,13 +19,14 @@ To reproduce the manuscript findings, you only have to load the libraries and ru
 
 #### Pipeline Commands
 
-The **first step** consists in loading three datasets:
-1. **ligands_list**, is a list with the IDs of the ligands from the LC-MS experiment
-2. **modulators_table**, is a data.frame/tibble having as mandatory columns the modulator IDs and the p-value, from CINDy/MINDy analysis
-3. **receptors_table**, is a data.frame/tibble having as mandatory columns the receptor IDs and the p-value, from VIPER analysis
+The *first step* consists in loading three datasets:
+1. *ligands_list*, is a list with the IDs of the ligands from the LC-MS experiment
+2. *modulators_table*, is a data.frame/tibble having as mandatory columns the modulator IDs and the p-value, from CINDy/MINDy analysis
+3. *receptors_table*, is a data.frame/tibble having as mandatory columns the receptor IDs and the p-value, from VIPER analysis
 
-We need also to set a seed for the random number generator that allows us to reproduce the code in the same way. To reproduce the manuscript's findings you don't need a running Neo4j server, because we use a caching system that recover from file PPIs already queried from a running server. You may need a Neo4j running server to query for PPIs pvalues that are not present in the cache. Please see [Neo4J Server Setup](neo4j-server-setup)
+We also need to set a *seed* for the random number generator that allows you to reproduce the results. Specifically, to reproduce the manuscript's findings you don't need a running Neo4j server, because we use a caching system that recover from file PPIs previously queried from a running server. You may need a Neo4j running server to query for PPIs pvalues that are not present in the cache. If you have a Neo4J running server with the PrePPI interaction network loaded, please set the flag `.isNeo4jServerOffline <- TRUE`. For further details, please see [Neo4J Server Setup](#neo4j-server-setup)
 
+Here is the first step:
 ```R
 rm(list = ls())
 set.seed(666)
