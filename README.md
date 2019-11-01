@@ -19,9 +19,12 @@ To reproduce the manuscript findings, you only have to load the libraries and ru
 
 #### Pipeline Commands
 
+The **first step** consists in loading three datasets:
+1. **ligands_list**, is a list with the IDs of the ligands from the LC-MS experiment
+2. **modulators_table**, is a data.frame/tibble having as mandatory columns the modulator IDs and the p-value, from CINDy/MINDy analysis
+3. **receptors_table**, is a data.frame/tibble having as mandatory columns the receptor IDs and the p-value, from VIPER analysis
 
-
- The **first step** consists in setting a seed for the random number generator that allows us to reproduce the code in the same way 
+We need also to set a seed for the random number generator that allows us to reproduce the code in the same way. To reproduce the manuscript's findings you don't need a running Neo4j server, because we use a caching system that recover from file PPIs already queried from a running server. You may need a Neo4j running server to query for PPIs pvalues that are not present in the cache. Please see [Neo4J Server Setup](neo4j-server-setup)
 
 ```R
 rm(list = ls())
@@ -35,6 +38,7 @@ ligands_list <- tmp$GeneSymbol
 modulators_table <- read_csv("input/cindy-analysis.csv", col_types = "ccd")
 receptors_table <- read_delim("input/viper-analysis.csv", delim = "\t" , col_types = "ccdddd")
 ```
+The **second and last** step consists in running the algorithm with the loaded data that presents a table with the ranked interactions as output.
 Here is how to run the pipeline as one command-only line of code that performs all the steps in cascade. However, each step can be performed as separate individual line of code.
 
 ```R
@@ -79,6 +83,10 @@ An object of class SEARCHIN
 #### Protein-Protein Interaction (PPI) empirical null model using PrePPI
 
 We used Neo4J Graph Database Community Edition version 3.2.5 to build a network of human protein interaction consisting of 20,259 proteins and 203,952,081 interactions with a total store size of 14.28 GB.
+
+##### Neo4j Server Setup
+
+Bla bla bla
 
 #### Generation of the VIPER table used as input data
 

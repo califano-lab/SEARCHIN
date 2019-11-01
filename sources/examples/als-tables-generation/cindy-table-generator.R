@@ -90,4 +90,26 @@ library(dplyr)
   {
     empPvals( n_triplets , cindy_analysis.env$triplets.nfkb1$n_triplets )
   }
+  
+  ##
+  # Collect and Filter CINDy results on NFKB1
+  # -----------------------------------------
+  message("- Collecting and filtering CINDy Table on NFKB1 ...")
+  {
+    cindy_analysis.env$cindy_table <- read.table( file = file.path( "data/examples/cindyOutput_0.01.txt" ) , stringsAsFactors = F , strip.white = T , header = T )
+    cindy_filtered.table <- as.data.table( cindy_analysis.env$cindy_table )
+
+    cindy_filtered.table <- cindy_filtered.table[ Modulator %in% preppi_filtered.ordered$receptor_Symbol & TF %in% "Nfkb1" , ] 
+    cindy_filtered.table[ , inferred_pvalue.gamma := getCindyPvalueFromTripletsNumber(triplets = significantTriplets) ]
+    cindy_filtered.table <- cindy_filtered.table[ order(inferred_pvalue.gamma,decreasing = FALSE) , ]
+    
+    write_csv( as_tibble(cindy_filtered.table) , "output/cindy-table.csv")
+    
+    filename <- "output/cindy-pvalues.xlsx"
+    message("-- Writing Results to Excel : " , filename )
+    write.xlsx( file = filename , row.names = FALSE ,
+      sheetName = "cindy-model" ,
+      x = cindy_filtered.table[ , list(Modulator,TF,"p-value"=inferred_pvalue.gamma) ]
+      )
+  }  
     
