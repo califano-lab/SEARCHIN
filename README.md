@@ -8,8 +8,7 @@ This tutorial guides you through the application of the SEARCHIN methdology for 
 
 ## Schematics of the Methodology
 
-![Searching Schematics](/images/searchin-schematics.jpg)
-Format: ![Alt Text](url)
+![Searching Schematics](/data/images/searchin-schematics.jpg)
 
 ## Introduction
 

@@ -1,6 +1,10 @@
 ##
 # SEARCHIN Application Example
-# ----------------------------
+# ----------------------------------------------
+# @author: Alessandro Vasciaveo
+# @email: alessandro.vasciaveo@cumc.columbia.edu
+# @copyright: 2019
+# ----------------------------------------------
 
 	isWorkspaceToClean <- TRUE
 	if (isWorkspaceToClean)

@@ -1,7 +1,10 @@
 ##
 # SEARCHIN Utility class definition
-# ---------------------------------
-# source("/Users/av2729/Workspace/SEARCHIN/libs/searchin-utility-class.R")
+# ----------------------------------------------
+# @author: Alessandro Vasciaveo
+# @email: alessandro.vasciaveo@cumc.columbia.edu
+# @copyright: 2019
+# ----------------------------------------------
 
   SUtils = setClass( Class = "SUtils",
     slots = c(
@@ -22,9 +25,9 @@
     function(.Object , ...) {
       .Object <- callNextMethod()
       # .Object@table <- tibble( rank = integer() , ligand = character() , receptor = character() , pvalue = double() )
-      .Object@uniprot_mapping <- read_csv("data/uniprot-entrezgeneid-symbol-mapping-human-mouse-rat.csv" , col_types = c("ccccccc"))
-      .Object@ortho_mouse2human <- read_csv( "data/mouse2human.csv" , col_types = c("ccc"))
-      .Object@ortho_human2mouse <- read_csv( "data/human2mouse.csv" , col_types = c("ccc"))
+      .Object@uniprot_mapping <- read_csv("utils/data/uniprot-entrezgeneid-symbol-mapping-human-mouse-rat.csv" , col_types = c("ccccccc"))
+      .Object@ortho_mouse2human <- read_csv( "utils/data/mouse2human.csv" , col_types = c("ccc"))
+      .Object@ortho_human2mouse <- read_csv( "utils/data/human2mouse.csv" , col_types = c("ccc"))
       .Object
     }
   )  

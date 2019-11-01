@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# ----------------------------------------------
+# @author: Alessandro Vasciaveo
+# @email: alessandro.vasciaveo@cumc.columbia.edu
+# @copyright: 2019
+# ----------------------------------------------
+
 ## To import the database
 # rm -R "/Applications/Neo4j Community Edition 3.2.5.app/Contents/Resources/app/data/databases/preppi.graphdb"
 PREPPI_NEO4J_DB="/Users/av2729/Workspace/neo4j/databases/preppi.graphdb"

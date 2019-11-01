@@ -1,6 +1,10 @@
 ##
 # SEARCHIN class definition
-# -------------------------
+# ----------------------------------------------
+# @author: Alessandro Vasciaveo
+# @email: alessandro.vasciaveo@cumc.columbia.edu
+# @copyright: 2019
+# ----------------------------------------------
 
 rm(list = ls())
 
