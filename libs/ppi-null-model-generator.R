@@ -14,7 +14,7 @@ neo4j_password <- "preppi"
 neo4j_server_url <- "http://localhost:7474/db/data/"
 
 ## Filename Declaration ----
-preppi_final600_filename <- "data/preppi_final600.txt"
+preppi_final600_filename <- "utils/data/preppi_final600.txt"
 ppi_cache_filename <- "tmp/searchin_ppi_cache_table_Jul9_2019.csv"
 
 if (!.isNeo4jServerOffline)
