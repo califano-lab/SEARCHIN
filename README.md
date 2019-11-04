@@ -12,7 +12,7 @@ This tutorial guides you through the application of the SEARCHIN methdology for 
 
 ## Introduction
 
-Cell-to-cell etc., XXX
+[TODO]
 
 ### Using SEARCHIN - Example
 To reproduce the manuscript findings, you only have to load the libraries and run one command after having loaded the input data.
@@ -87,13 +87,15 @@ We used Neo4J Graph Database Community Edition version 3.2.5 to build a network 
 
 ##### Neo4j Server Setup
 
-Bla bla bla
+[TODO]
 
 #### Generation of the VIPER table used as input data
 
 Here is the code to generate the VIPER table: 
 
 ### Troubleshooting
+
+[TODO]
 
 #### Required Libraries
 

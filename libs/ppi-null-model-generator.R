@@ -10,9 +10,7 @@ source("libs/preppi-libs.R")
 
 ## Setting Neo4j Credential ----
 neo4j_username <- "neo4j"
-# neo4j_password <- "neo4jneo4j"
 neo4j_password <- "preppi"
-# neo4j_server_url <- "http://159.203.103.220:7474/db/data/"
 neo4j_server_url <- "http://localhost:7474/db/data/"
 
 ## Filename Declaration ----
