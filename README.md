@@ -91,7 +91,7 @@ We used Neo4J Graph Database Community Edition version 3.2.5 to build a network 
 
 #### Generation of the VIPER table used as input data
 
-Here is the code to generate the VIPER table: 
+Here is the code to generate the VIPER table: [Code to generate the manuscript's VIPER table](sources/examples/als-tables-generation/viper-table-generator.R)
 
 ### Troubleshooting
 
