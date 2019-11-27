@@ -89,7 +89,8 @@ We used Neo4J Graph Database Community Edition version 3.2.5 to build a network 
 
 ##### Neo4j Server Setup
 
-[TODO]
+* To run Neo4j Server you need to install the software from here: [Neo4j Server App](https://neo4j.com/download/)
+* To install the R package to interface with Neo4j Server, you can follow this guide: [RNeo4j Guide](https://github.com/nicolewhite/RNeo4j)
 
 #### Generation of the VIPER table used as input data
 
