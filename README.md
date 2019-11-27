@@ -15,7 +15,9 @@ This tutorial guides you through the application of the SEARCHIN methdology for 
 [TODO]
 
 ### Using SEARCHIN - Example
-To reproduce the manuscript findings, you only have to load the libraries and run one command after having loaded the input data.
+To reproduce the manuscript findings you can run: `source(sources/searchin.R)` obtaining the published findings in one step.
+Alternatively, you can interactively reproduce the analysis in very few steps. 
+Basically, you only have to load the libraries and run one command after having loaded the input data.
 
 #### Pipeline Commands
 
