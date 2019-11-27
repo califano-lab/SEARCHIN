@@ -30,8 +30,8 @@ Here is the first step:
 ```R
 rm(list = ls())
 set.seed(666)
-source("libs/searchin-class.R")	# Load SEARCHING libraries and utilities
 .isNeo4jServerOffline <- TRUE	# Flag this as FALSE if you have installed the Neo4j server or if you want to run SEARCHIN with your own data: you need the server with the PPI data running
+source("libs/searchin-class.R")	# Load SEARCHING libraries and utilities
 
 # Loading input data
 tmp <- read_csv("input/putative_ligands_mouse_new_data_jul2019.txt",col_types = c("cccccccc"))
