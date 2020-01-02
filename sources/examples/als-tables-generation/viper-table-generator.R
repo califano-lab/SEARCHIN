@@ -4,6 +4,8 @@
 # @copyright: 2019
 # -------------------------------
 
+source("sources/examples/als-tables-generation/viper-utility-functions.R")
+
 viper_analysis <- list()
 viper_analysis$data_dir <- file.path("data/examples/als-tables-generation")
 viper_analysis$output_dir <- file.path("output/")
