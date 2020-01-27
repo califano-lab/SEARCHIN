@@ -107,5 +107,15 @@ require(tidyverse)
 require(org.Hs.eg.db)
 require(org.Mm.eg.db)
 require(RNeo4j)
+require(sloop)
+require(Qvalue)
+require(RobustRankAggreg)
+
+install.packages('BiocManager')
+BiocManager::install('tidyverse')
+BiocManager::install('org.Hs.eg.db')
+BiocManager::install('org.Mm.eg.db')
+BiocManager::install('devtools')
+devtools::install_github("nicolewhite/RNeo4j")
 ```
 
