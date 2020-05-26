@@ -10,10 +10,6 @@ This tutorial guides you through the application of the SEARCHIN methdology for 
 
 ![Searching Schematics](/data/images/searchin-schematics.jpg)
 
-## Introduction
-
-[TODO]
-
 ### Using SEARCHIN - Example
 To reproduce the manuscript findings you can run: `source(sources/searchin.R)` obtaining the published findings in one step.
 Alternatively, you can interactively reproduce the analysis in very few steps. 
@@ -98,7 +94,7 @@ Here is the code to generate the VIPER table: [Code to generate the manuscript's
 
 ### Troubleshooting
 
-[TODO]
+If you have any issues with running the code and reproducing the manuscript's findings, please open an issue here on GitHub, or write a short email describing the issue to av2729@cumc.columbia.edu.
 
 #### Required Libraries
 
