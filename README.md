@@ -94,7 +94,7 @@ Here is the code to generate the VIPER table: [Code to generate the manuscript's
 
 ### Troubleshooting
 
-If you have any issues with running the code and reproducing the manuscript's findings, please open an issue here on GitHub, or write a short email describing the issue to av2729@cumc.columbia.edu.
+If you have any issues with running the code and reproducing the manuscript's findings, please open an issue here on GitHub, or write a short email describing the issue to av2729@cumc.columbia.edu (Dr. Alessandro Vasciaveo).
 
 #### Required Libraries
 
